@@ -135,7 +135,7 @@ Solar end -->
             <scope>compile</scope>
         </dependency>
         <dependency>
-            <groupId>io.papermc</groupId>
+            <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
 <!-- Solar end -->
             <version>1.17-R0.1-SNAPSHOT</version>
@@ -320,15 +320,15 @@ Solar end -->
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>net.ess3</groupId>
+            <groupId>gg.solarmc.essentialsx</groupId> <!-- Solar -->
             <artifactId>EssentialsX</artifactId>
-            <version>2.16.0</version>
+            <version>2.19.0-SNAPSHOT</version> <!-- Solar -->
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>net.ess3</groupId>
+            <groupId>gg.solarmc.essentialsx</groupId> <!-- Solar -->
             <artifactId>EssentialsXChat</artifactId>
-            <version>2.0.1</version>
+            <version>2.19.0-SNAPSHOT</version> <!-- Solar -->
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -357,6 +357,7 @@ Solar end -->
                 </exclusion>
             </exclusions>
         </dependency>
+<!-- Solar start
         <dependency>
             <groupId>org.dynmap</groupId>
             <artifactId>dynmap</artifactId>
@@ -393,6 +394,7 @@ Solar end -->
                 </exclusion>
             </exclusions>
         </dependency>
+Solar end -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
@@ -484,6 +486,7 @@ Solar end -->
             <version>5.0</version>
             <scope>provided</scope>
         </dependency>
+<!-- Solar start
         <dependency>
             <groupId>com.elmakers.mine.bukkit</groupId>
             <artifactId>MagicAPI</artifactId>
@@ -491,6 +494,7 @@ Solar end -->
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
+Solar end -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
