@@ -12,6 +12,7 @@
 # maven
 /target
 /modules/Legacy/target
+pom.xml.versionsBackup
 
 # vim
 .*.sw[a-p]

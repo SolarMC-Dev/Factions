@@ -2,9 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.massivecraft</groupId>
+<!-- Solar start -->
+    <parent>
+        <groupId>gg.solarmc.massivecraft</groupId>
+        <artifactId>Factions-aggregator</artifactId>
+        <version>1.6.9.5-U0.5.25-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
+    </parent>
+<!-- Solar end -->
     <artifactId>Factions-Legacy</artifactId>
-    <version>1.6.9.5-U0.5.25</version>
+    <version>1.6.9.5-U0.5.25-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Factions Legacy Version Support</name>
@@ -29,11 +36,13 @@
     </build>
 
     <dependencies>
+<!-- Solar start -->
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.8.8-R0.1-SNAPSHOT</version>
+            <groupId>gg.solarmc.paper</groupId>
+            <artifactId>solarpaper-api</artifactId>
+            <version>1.2.0</version>
             <scope>provided</scope>
+<!--
             <exclusions>
                 <exclusion>
                     <artifactId>bungeecord-chat</artifactId>
@@ -56,11 +65,13 @@
                     <groupId>com.google.code.gson</groupId>
                 </exclusion>
             </exclusions>
+-->
         </dependency>
         <dependency>
-            <groupId>com.sk89q</groupId>
-            <artifactId>worldguard</artifactId>
-            <version>6.1.1-SNAPSHOT</version>
+            <groupId>gg.solarmc.worldguard</groupId>
+            <artifactId>worldguard-legacy</artifactId>
+            <version>6.2.2-SNAPSHOT</version>
+<!-- Solar end -->
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -98,9 +109,11 @@
             </exclusions>
         </dependency>
         <dependency>
-            <groupId>com.sk89q.worldedit</groupId>
+<!-- Solar start -->
+            <groupId>gg.solarmc.worldedit</groupId>
             <artifactId>worldedit-bukkit</artifactId>
-            <version>6.1.1-SNAPSHOT</version>
+            <version>6.1.9-SNAPSHOT</version>
+<!-- Solar end -->
             <scope>provided</scope>
             <exclusions>
                 <exclusion>
@@ -153,8 +166,9 @@
                 </exclusion>
             </exclusions>
         </dependency>
+<!-- Solar start
         <dependency>
-            <groupId>com.sk89q.worldedit</groupId>
+            <groupId>gg.solarmc.worldedit</groupId>
             <artifactId>worldedit-core</artifactId>
             <version>6.1.1-SNAPSHOT</version>
             <scope>provided</scope>
@@ -209,8 +223,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+Solar end -->
     </dependencies>
 
+<!-- Solar start
     <repositories>
         <repository>
             <id>maven.sk89q.com</id>
@@ -221,4 +237,5 @@
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
         </repository>
     </repositories>
+Solar end -->
 </project>

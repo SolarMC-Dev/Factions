@@ -2,9 +2,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.massivecraft</groupId>
+<!-- Solar start -->
+    <parent>
+        <groupId>gg.solarmc</groupId>
+        <artifactId>solar-parent</artifactId>
+        <version>0.6.2</version>
+    </parent>
+    <groupId>gg.solarmc.massivecraft</groupId>
+<!-- Solar end -->
     <artifactId>Factions-aggregator</artifactId>
-    <version>1.6.9.5-U0.5.25</version>
+    <version>1.6.9.5-U0.5.25-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Factions Aggregator Project</name>
@@ -33,4 +40,13 @@
             </plugin>
         </plugins>
     </build>
+
+<!-- Solar start -->
+    <repositories>
+        <repository>
+            <id>solar-releases</id>
+            <url>https://mvn-repo.solarmc.gg/releases</url>
+        </repository>
+    </repositories>
+<!-- Solar end -->
 </project>
