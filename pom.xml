@@ -6,7 +6,7 @@
     <parent>
         <groupId>gg.solarmc</groupId>
         <artifactId>solar-parent</artifactId>
-        <version>0.6.2</version>
+        <version>1.1.0</version>
     </parent>
     <groupId>gg.solarmc.massivecraft</groupId>
 <!-- Solar end -->
@@ -38,14 +38,26 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+<!-- Solar start -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>enforce-organization-repositories</id>
+                        <phase>none</phase>
+                    </execution>
+                </executions>
+            </plugin>
+<!-- Solar end -->
         </plugins>
     </build>
 
 <!-- Solar start -->
     <repositories>
         <repository>
-            <id>solar-releases</id>
-            <url>https://mvn-repo.solarmc.gg/releases</url>
+            <id>solar-repo</id>
+            <url>https://repo.solarmc.gg/mvn</url>
         </repository>
         <repository>
             <id>sk89q-repo</id>

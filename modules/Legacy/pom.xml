@@ -9,9 +9,8 @@
         <version>1.6.9.5-U0.5.25-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
-<!-- Solar end -->
     <artifactId>Factions-Legacy</artifactId>
-    <version>1.6.9.5-U0.5.25-SNAPSHOT</version>
+<!-- Solar end -->
     <packaging>jar</packaging>
 
     <name>Factions Legacy Version Support</name>
